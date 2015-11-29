@@ -3,6 +3,7 @@ package com.example.thuraaung.myapplication;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -41,5 +42,15 @@ public class MainActivity extends Activity {
         });
 
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(android.view.Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        MenuInflater blowup = getMenuInflater();
+        blowup.inflate(R.menu.cool_menu, menu);
+        return true;
+    }
+
+
 
 }

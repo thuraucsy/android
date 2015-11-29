@@ -3,6 +3,8 @@ package com.example.thuraaung.myapplication;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -12,7 +14,7 @@ import android.widget.ListView;
  */
 public class Menu extends ListActivity {
 
-    String classes[] = {"MainActivity", "TextPlay", "Email", "example3",
+    String classes[] = {"MainActivity", "TextPlay", "Email", "Camera",
             "example4", "example5", "example6", "example7"};
 
     @Override
@@ -33,5 +35,33 @@ public class Menu extends ListActivity {
             e.printStackTrace();
         }
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(android.view.Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        MenuInflater blowup = getMenuInflater();
+        blowup.inflate(R.menu.cool_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.aboutUs:
+                Intent i = new Intent("com.example.thuraaung.myapplication.ABOUT");
+                startActivity(i);
+                break;
+
+            case R.id.preferences:
+                Intent p = new Intent("com.example.thuraaung.myapplication.PREFS");
+                startActivity(p);
+                break;
+
+            case R.id.exit:
+                finish();
+                break;
+        }
+        return false;
     }
 }

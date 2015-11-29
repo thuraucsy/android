@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.thuraaung.myapplication" >
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
 
     <application
         android:allowBackup="true"
@@ -26,6 +27,25 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".AboutUs"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.example.thuraaung.myapplication.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Prefs"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.example.thuraaung.myapplication.PREFS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
@@ -39,6 +59,10 @@
         </activity>
         <activity
             android:name=".Email" android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Camera" android:label="@string/app_name"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 

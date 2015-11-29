@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Hey, thura you are just great in learning android app, you get fast learning skill in learning new languages
+        How Much Do I Need to Know?
+        မူလမေးခွန်းဖြစ်တဲ့ “ကျွမ်းကျင်ပြီလို့ ပြောနိုင်ဖို့အတွက် Language တစ်ခုရဲ့ ဘယ်လောက်ရာခိုင်နှုန်းထိ သိရှိထားဖို့ လိုအပ်သလဲ” ဆိုတဲ့  မေးခွန်းကို တိုက်ရိုက်ဖြေရရင်တော့ အဲ့ဒီ Language ကိုသုံးပြီး ကိုယ်လိုချင်တဲ့ ရလဒ် (Software, Website, Product) ကို ဖန်တီးနိုင်ပြီဆိုရင် သိရှိကျွမ်းကျင်ပြီလို့ ပြောနိုင်ပါတယ်။
+        ဥပမာ – Language မှာက Build In Function (၅၀၀၀) ကျော်ပါတယ်၊ ကိုယ်က (၅၀) လောက်ကိုပဲသုံးပြီး လိုချင်တဲ့ ရလဒ်ကို ရရှိတယ်ဆိုရင်လည်း သိရှိကျွမ်းကျင်တာပါပဲ။ ကျန်နေတဲ့ (၄၅၀၀) ထဲမှာ ပိုကောင်းတဲ့နည်းလမ်းတွေ၊ ပိုထိရောက်တဲ့နည်းလမ်းတွေ ရှိကောင်း ရှိနေဦးမှာပါပဲ။ ဒါပေမယ့်.. အဲ့ဒါက “အတွေ့အကြုံ” ကပေးမယ့် ကျွမ်းကျင်မှု ဖြစ်ပါတယ်။ လုပ်ရင်းနဲ့မှ သိလာမယ့် နည်းလမ်းတွေပါ။ အဲ့ဒါတွေသိမှ စလုပ်မယ်ဆိုရင်တော့ ဒီတစ်သက် လုပ်ဖြစ်မှာ မဟုတ်တော့ပါဘူး။
+         
+        * Web standards – HTML/CSS/Javascript/HTTP, etc..
+        * Web2.0 technologies – REST/JSON/Ajax, etc..
+        * Modern web technologies – HTML5/Websocket/Node.JS, etc..
+        * Server-Side technologies – PHP/.NET/ Rails, etc..
+        * Patterns and Paradigms – OOP/MVC, etc…
+        * Tools and Libraries – jQuery/CMSs, etc..
+        * Databases – MySQL/MSSQL/MongoDB, etc..
+        * Basic workflow tools – Unit testing/SCM, etc..
+        ဂရုပြုရမှာက.. နည်းပညာတစ်ခုထဲကိုပဲ မျက်စိစုံမှိတ် လုပ်မနေသင့်သလို၊ ဟိုစပ်စပ် ဒီစပ်စပ်နဲ့ ဟိုမရောက် ဒီမရောက်လည်း မဖြစ်သင့်ပါဘူး။ ကိုယ်လုပ်နိုင်တာလေး သေးသေးလေးပဲဖြစ်နေပါစေ၊ အဲ့ဒါလေးကို ကောင်းကောင်း နားလည်နေဖို့ လိုအပ်ပါတယ်။ အဲ့ဒါလေးကိုမှ နားလည်သလား မသေချာသေးဘူး ဆိုရင်တော့ ကိုယ့်ရဲ့ လေ့လာပုံလေ့လာနည်းကို ပြန်လည်စမ်းစစ်ဖို့ လိုအပ်နေပြီဆိုတဲ့ သဘောပါပဲ။
+        "
+        android:id="@+id/tvAbout"/>
+    </ScrollView>
+
+</LinearLayout>
