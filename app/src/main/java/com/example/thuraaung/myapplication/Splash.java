@@ -2,8 +2,10 @@ package com.example.thuraaung.myapplication;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 
 import java.io.InterruptedIOException;
 
@@ -18,7 +20,11 @@ public class Splash extends Activity {
         setContentView(R.layout.splash);
 
         ourSong = MediaPlayer.create(Splash.this, R.raw.apple_iphone);
-        ourSong.start();
+
+        SharedPreferences getPref = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+        boolean music = getPref.getBoolean("checkbox", true);
+        if (music == true)
+            ourSong.start();
 
         Thread timer = new Thread() {
             public void run() {
