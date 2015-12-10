@@ -45,7 +45,9 @@ public class SharedPrefs extends Activity implements View.OnClickListener {
                 editor.commit();
                 break;
             case R.id.bLoad:
-
+                someData = getSharedPreferences(FILENAME, 0);
+                String dataReturned = someData.getString("sharedString", "Couldn't load the data");
+                dataResults.setText(dataReturned);
                 break;
         }
     }
